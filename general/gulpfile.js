@@ -80,6 +80,22 @@ gulp.task('handlejs', () => {
 		.pipe(gulp.dest('./dist'))
 })
 
+// 缓存 App Shell
+gulp.task('cache', function (callback) {
+    var path = require('path');
+    var swPrecache = require('sw-precache');
+    var rootDir = 'app';
+
+    swPrecache.write(
+        path.join(rootDir, 'service-worker.js'),
+        {
+            staticFileGlobs: [rootDir + '/**/*.{js,html,css,png,jpg,gif}'],
+            stripPrefix: rootDir
+        },
+        callback
+    );
+});
+
 // 清空dist文件夹
 gulp.task('del', cb => {
 	del('./dist/*', cb)
