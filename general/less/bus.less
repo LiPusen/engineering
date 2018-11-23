@@ -1,19 +1,238 @@
-.banner{
-    width: 100%;
-    height: 300px;
-    border-radius: 5px;
-    ul{
-        clear: both;
-        overflow: hidden;
-        font-size: 0;
-        li{
-            box-shadow: inset 0 0 2px #333;
-            float: left;
-            font-size: 18px;
-            line-height: 36px;
-            padding: 5px 12px;
-            border-radius: 5px;
-            cursor: pointer;
+// logo
+.b-logo{
+    position: relative;
+    padding-right: 0.6rem;
+    font-size: 0.44rem;
+    font-weight: 700;
+    color: #222 !important;
+    text-decoration: none !important;
+    img{
+        display: inline;
+        width: auto;
+        height: 55%;
+    }
+}
+// 一级菜单按钮
+.b-na{
+    position: relative;
+    display: inline-block;
+    padding: 0 0.34rem;
+    font-size: 0.36rem;
+    color: #222 !important;
+    text-decoration: none !important;
+    &:hover{
+        background-color: #eee;
+    }
+    &-cur{
+        background-color: #eee;
+    }
+}
+// 搜索
+.b-search{
+    position: relative;
+    width: 6rem;
+    height: 100%;
+    overflow: hidden;
+    div{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 100%;
+        height: 0.7rem;
+        line-height: 0.7rem;
+        padding-right: 0.8rem;
+        padding-left: 0.3rem;
+        border: 1px solid #e7e7e7;
+        border-radius: 5px; 
+        background-color: #f1f1f1;
+        input{
+            width: 100%;
+            height: 80%;
+            outline: none;
+            border: none;
+            font-size: 0.28rem;
+            color: #333;
+            background-color: transparent;
         }
+    }
+    &-btn{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0.2rem;
+        margin: auto;
+        display: block;
+        width: 0.32rem;
+        height: auto;
+        cursor: pointer;
+    }
+}
+// 网站尾部声明
+.b-foot{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: #c7c7c7;
+    font-size: 0.24rem;
+    text-transform: uppercase;
+}
+// 下载页title
+.b-dtitle{
+    width: 100%;
+    text-align: center;
+    font-size: 0.48rem;
+    color: #111;
+    line-height: 0.8rem;
+    font-weight: 600;
+}
+// 下载页输入框
+.b-darea{
+    width: 100%;
+    height: 3rem;
+    resize: none;
+    margin: 0.5rem 0;
+    border: 1px solid #eee;
+    background-color: #fdfdfd; 
+    border-radius: 3px; 
+    outline: none;
+    padding: 0.2rem;
+    &:focus, &:active{
+        border-color: #ccc;
+    }
+}
+// 全局通用主按钮
+.b-btn{
+    padding: 0.2rem 0.5rem;
+    font-size: 0.32rem;
+    color: #555;
+    background-color: #fefefe;
+    border: 1px solid #ddd;
+    border-radius: 3px; 
+    transition: all .3s;
+    cursor: pointer;
+    &:hover{
+        background-color: #eee;
+        border-color: #bbb; 
+        color: #222;
+    }
+}
+// 全局页面标题
+.b-title{
+    position: relative;
+    font-size: 0.44rem;
+    line-height: 0.8rem;
+    font-weight: 700;
+    color: #222 !important;
+    text-indent: 0.6rem;
+    border-left: 5px solid #ccc;
+    margin: 0.5rem 0; 
+    background-color: #fff;
+}
+// 用户图像列表
+.b-user{
+    position: relative;
+    width: 25%;
+    min-width: 4rem;
+    height: 3rem;
+    cursor: pointer;
+    transition: all .3s;
+    &:hover{
+        box-shadow: 1px 1px 2px #ddd;
+    }
+    &-box{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 100%;
+        max-width: 5rem;
+    }
+    &-img{
+        position: relative;
+        width: 40%;
+        padding: 0.2rem;
+        text-align: center;
+        img{
+            display: inline;
+            width: 100%;
+            height: auto;
+            border: 1px solid #e7e7e7;
+            border-radius: 50%; 
+        }
+        small{
+            font-size: 0.28rem;
+            color: #517fa4;
+            line-height: 0.7rem;
+        }
+    }
+    &-info{
+        position: relative;
+        width: 60%;
+        padding: 0.5rem 0 0 0.2rem; 
+        p{
+            font-size: 0.28rem;
+            color: #222;
+            line-height: 0.36rem;
+        }
+    }
+}
+//  加载中，信息提示
+.b-load{
+    position: relative;
+    margin: 0.3rem;
+    text-align: center;
+    font-size: 0.36rem;
+    color: #c7c7c7;
+    text-transform: uppercase;
+}
+// 排名两列
+.b-row{
+    position: relative;
+    width: 50%;
+    padding: 0.3rem 0.3rem 0.3rem 1.5rem;
+    cursor: pointer;
+    transition: all .3s;
+    &:hover{
+        box-shadow: 1px 1px 3px #ddd;
+    }
+    &-n{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0.3rem;
+        margin: auto;
+        width: 0.6rem;
+        height: 0.6rem;
+        border: 1px solid #555;
+        border-radius: 50%;
+        font-size: 0.36rem;
+        color: #111;
+        font-weight: 700;
+        line-height: 0.6rem;
+        text-align: center; 
+    }
+    &-p{
+        font-size: 0.28rem;
+        color: #333;
+        line-height: 0.5rem;
+    }
+}
+// 文字链
+.b-txt{
+    position: relative;
+    width: 25%;
+    box-sizing: border-box;
+    padding-right: 0.3rem;
+    font-size: 0.32rem;
+    color: #517fa4;
+    line-height: 0.8rem;
+    border-bottom: 1px dotted #ddd;
+    display: block;
+    &:hover{
+        color: #0066FF;
     }
 }

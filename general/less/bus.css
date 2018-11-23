@@ -1,0 +1,227 @@
+.b-logo {
+  position: relative;
+  padding-right: 0.6rem;
+  font-size: 0.44rem;
+  font-weight: 700;
+  color: #222 !important;
+  text-decoration: none !important;
+}
+.b-logo img {
+  display: inline;
+  width: auto;
+  height: 55%;
+}
+.b-na {
+  position: relative;
+  display: inline-block;
+  padding: 0 0.34rem;
+  font-size: 0.36rem;
+  color: #222 !important;
+  text-decoration: none !important;
+}
+.b-na:hover {
+  background-color: #eee;
+}
+.b-na-cur {
+  background-color: #eee;
+}
+.b-search {
+  position: relative;
+  width: 6rem;
+  height: 100%;
+  overflow: hidden;
+}
+.b-search div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100%;
+  height: 0.7rem;
+  line-height: 0.7rem;
+  padding-right: 0.8rem;
+  padding-left: 0.3rem;
+  border: 1px solid #e7e7e7;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+}
+.b-search div input {
+  width: 100%;
+  height: 80%;
+  outline: none;
+  border: none;
+  font-size: 0.28rem;
+  color: #333;
+  background-color: transparent;
+}
+.b-search-btn {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0.2rem;
+  margin: auto;
+  display: block;
+  width: 0.32rem;
+  height: auto;
+  cursor: pointer;
+}
+.b-foot {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  color: #c7c7c7;
+  font-size: 0.24rem;
+  text-transform: uppercase;
+}
+.b-dtitle {
+  width: 100%;
+  text-align: center;
+  font-size: 0.48rem;
+  color: #111;
+  line-height: 0.8rem;
+  font-weight: 600;
+}
+.b-darea {
+  width: 100%;
+  height: 3rem;
+  resize: none;
+  margin: 0.5rem 0;
+  border: 1px solid #eee;
+  background-color: #fdfdfd;
+  border-radius: 3px;
+  outline: none;
+  padding: 0.2rem;
+}
+.b-darea:focus,
+.b-darea:active {
+  border-color: #ccc;
+}
+.b-btn {
+  padding: 0.2rem 0.5rem;
+  font-size: 0.32rem;
+  color: #555;
+  background-color: #fefefe;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  transition: all .3s;
+  cursor: pointer;
+}
+.b-btn:hover {
+  background-color: #eee;
+  border-color: #bbb;
+  color: #222;
+}
+.b-title {
+  position: relative;
+  font-size: 0.44rem;
+  line-height: 0.8rem;
+  font-weight: 700;
+  color: #222 !important;
+  text-indent: 0.6rem;
+  border-left: 5px solid #ccc;
+  margin: 0.5rem 0;
+  background-color: #fff;
+}
+.b-user {
+  position: relative;
+  width: 25%;
+  min-width: 4rem;
+  height: 3rem;
+  cursor: pointer;
+  transition: all .3s;
+}
+.b-user:hover {
+  box-shadow: 1px 1px 2px #ddd;
+}
+.b-user-box {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  max-width: 5rem;
+}
+.b-user-img {
+  position: relative;
+  width: 40%;
+  padding: 0.2rem;
+  text-align: center;
+}
+.b-user-img img {
+  display: inline;
+  width: 100%;
+  height: auto;
+  border: 1px solid #e7e7e7;
+  border-radius: 50%;
+}
+.b-user-img small {
+  font-size: 0.28rem;
+  color: #517fa4;
+  line-height: 0.7rem;
+}
+.b-user-info {
+  position: relative;
+  width: 60%;
+  padding: 0.5rem 0 0 0.2rem;
+}
+.b-user-info p {
+  font-size: 0.28rem;
+  color: #222;
+  line-height: 0.36rem;
+}
+.b-load {
+  position: relative;
+  margin: 0.3rem;
+  text-align: center;
+  font-size: 0.36rem;
+  color: #c7c7c7;
+  text-transform: uppercase;
+}
+.b-row {
+  position: relative;
+  width: 50%;
+  padding: 0.3rem 0.3rem 0.3rem 1.5rem;
+  cursor: pointer;
+  transition: all .3s;
+}
+.b-row:hover {
+  box-shadow: 1px 1px 3px #ddd;
+}
+.b-row-n {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0.3rem;
+  margin: auto;
+  width: 0.6rem;
+  height: 0.6rem;
+  border: 1px solid #555;
+  border-radius: 50%;
+  font-size: 0.36rem;
+  color: #111;
+  font-weight: 700;
+  line-height: 0.6rem;
+  text-align: center;
+}
+.b-row-p {
+  font-size: 0.28rem;
+  color: #333;
+  line-height: 0.5rem;
+}
+.b-txt {
+  position: relative;
+  width: 25%;
+  box-sizing: border-box;
+  padding-right: 0.3rem;
+  font-size: 0.32rem;
+  color: #517fa4;
+  line-height: 0.8rem;
+  border-bottom: 1px dotted #ddd;
+  display: block;
+}
+.b-txt:hover {
+  color: #0066FF;
+}

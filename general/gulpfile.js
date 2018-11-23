@@ -30,8 +30,16 @@ gulp.task('minhtml', () => {
 		.pipe(gulp.dest('./dist'))
 })
 
+gulp.task('baseCss', () => {
+    return gulp.src('./common/base.css')
+        .pipe(autoprefixer(conf.prefix))
+        .pipe(minifycss())
+        .pipe(rename({ suffix: '.min' }))
+        .pipe(gulp.dest('./common'))   
+})
+
 // 复制common到dist文件夹
-gulp.task('mv', () => {
+gulp.task('mv', ['baseCss'], () => {
 	return gulp.src('./common/*')
 		.pipe(gulp.dest('./dist/common'))
 })

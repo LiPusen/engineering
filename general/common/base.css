@@ -1,23 +1,24 @@
-html,body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,dl,dt,dd,form,fieldset,table,td,img,div{margin:0;padding:0;border:0;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;-webkit-overflow-scrolling: touch;}    
-body{background-color:#fff;color:#333;font-size:12px;font-family: "微软雅黑","San Francisco","Arial Narrow";}    
+html,body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,dl,dt,dd,form,fieldset,table,td,img,div,nav,header,footer,aside,article,section{margin:0;padding:0;border:0;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;-webkit-overflow-scrolling: touch;}    
+body{color:#333;font-size: 0.28rem;font-family: Lato,HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;}    
 
-html,body{width: 100%;height: 100%;position: relative;overflow: hidden;}    
+html,body{width: 100%;height: 100%;position: relative;background-color: #f9f9f9}    
 ul,ol{list-style-type:none;}    
 select,input,img,select{vertical-align:middle;}    
     
 a{text-decoration:none;}    
-a:link{color:#009;}    
-a:visited{color:#800080;}    
-a:hover,a:active,a:focus{color:#c00;text-decoration:underline;} 
+/* a:link{color:#333;}    
+a:visited{color:#333;}     */
+a:hover,a:active,a:focus{text-decoration:underline;} 
 
 img{vertical-align:middle;}   
 table{border-collapse:collapse;border-spacing:0}    
 p{word-wrap:break-word}
 
 html {
-  line-height: 1.15; /* 1 */
-  -ms-text-size-adjust: 100%; /* 2 */
-  -webkit-text-size-adjust: 100%; /* 2 */
+    font-size: 50px;
+    line-height: 1.15; /* 1 */
+    -ms-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 article,
@@ -27,12 +28,6 @@ header,
 nav,
 section {
   display: block;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 h1 {
@@ -150,6 +145,8 @@ textarea {
   font-size: 100%; /* 1 */
   line-height: 1.15; /* 1 */
   margin: 0; /* 2 */
+  padding: 0;
+  box-sizing: border-box;
 }
 
 button,
@@ -256,8 +253,37 @@ template {
 }
 
 [hidden] {
-  display: none;
+  display: none !important;
 }
+
+.t-cl{
+    font-size: 0;
+    overflow: hidden;
+    clear: both;
+}
+
+.t-fl{
+    float: left;
+}
+
+.t-fr{
+    float: right;
+}
+
+.t-oneline{
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.t-twoline{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
 /*webkit滚动条样式*/
 ::-webkit-scrollbar {
     width: 10px;
