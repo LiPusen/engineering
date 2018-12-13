@@ -1,0 +1,228 @@
+.sub-navbar {
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    width: 100%;
+    text-align: right;
+    padding-right: 20px;
+    transition: 600ms ease position;
+    background: linear-gradient(90deg, rgba(32, 182, 249, 1) 0%, rgba(32, 182, 249, 1) 0%, rgba(33, 120, 241, 1) 100%, rgba(33, 120, 241, 1) 100%);
+    .subtitle {
+        font-size: 20px;
+        color: #fff;
+    }
+    &.draft {
+        background-color: #d0d0d0;
+    }
+    &.deleted {
+        background-color: #d0d0d0;
+    }
+}
+
+.link-type,
+.link-type:focus {
+    color: #337ab7;
+    cursor: pointer;
+    &:hover {
+        color: rgb(32, 160, 255);
+    }
+}
+.multiselect {
+    line-height: 16px;
+}
+
+.multiselect--active {
+    z-index: 1000 !important;
+}
+
+//  全局布局样式表
+.g {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    &-con {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    &-sidebar {
+        position: absolute !important;
+        top: 0;
+        left: 0;
+        width: 180px !important;
+        height: 100%;
+        font-size: 0;
+        overflow: hidden;
+        transition: width .3s;
+        z-index: 10;
+        a {
+            display: inline-block;
+            width: 100%;
+        }
+        .svg-icon {
+            margin-right: 16px;
+        }
+        .el-menu {
+            width: 100% !important;
+        }
+        .horizontal-collapse-transition {
+            transition: 0s width ease-in-out, 0s padding-left ease-in-out, 0s padding-right ease-in-out;
+        }
+    }
+    &-main {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding-left: 180px;
+        overflow: hidden;
+        transition: padding-left .3s;
+        &-box {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            padding-top: 90px;
+            overflow: auto;
+        }
+    } 
+    // 菜单收起
+    &-collapse {
+        .g-sidebar {
+            width: 36px !important;
+        }
+        .g-main {
+            padding-left: 36px !important;
+        }
+        .submenu-title-noDropdown {
+            padding-left: 10px !important;
+            position: relative;
+            .el-tooltip {
+                padding: 0 10px !important;
+            }
+        }
+        .el-submenu {
+            &>.el-submenu__title {
+                padding-left: 10px !important;
+                &>span {
+                    height: 0;
+                    width: 0;
+                    overflow: hidden;
+                    visibility: hidden;
+                    display: inline-block;
+                }
+                .el-submenu__icon-arrow {
+                    display: none;
+                }
+            }
+        }
+    }
+    &-top{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 90px;
+        &-nav{
+            position: relative;
+            height: 50px;
+            line-height: 50px;
+        }
+        &-tag{
+            position: relative;
+            height: 40px;
+            line-height: 40px;
+        }
+    }
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+        box-sizing: inherit;
+    }
+}
+
+// 覆盖框架菜单样式及纯粹的框架样式覆盖
+.nest-menu .el-submenu>.el-submenu__title,
+.el-submenu .el-menu-item {
+    min-width: 180px !important;
+    background-color: #1f2d3d !important;
+    &:hover {
+        background-color: #001528 !important;
+    }
+}
+
+.el-menu--collapse .el-menu .el-submenu {
+    min-width: 180px !important;
+}
+
+.el-menu {
+    border: none !important;
+}
+
+.el-breadcrumb__inner,
+.el-breadcrumb__inner a {
+    font-weight: 400 !important;
+}
+
+.el-upload {
+    input[type="file"] {
+        display: none !important;
+    }
+}
+
+.el-upload__input {
+    display: none;
+}
+
+.cell {
+    .el-tag {
+        margin-right: 0px;
+    }
+}
+
+.small-padding {
+    .cell {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+.fixed-width {
+    .el-button--mini {
+        padding: 7px 10px;
+        width: 60px;
+    }
+}
+
+.status-col {
+    .cell {
+        padding: 0 10px;
+        text-align: center;
+        .el-tag {
+            margin-right: 0px;
+        }
+    }
+}
+
+.el-dialog {
+    transform: none;
+    left: 0;
+    position: relative;
+    margin: 0 auto;
+}
+
+.upload-container {
+    .el-upload {
+        width: 100%;
+        .el-upload-dragger {
+            width: 100%;
+            height: 200px;
+        }
+    }
+}
+
+.el-dropdown-menu {
+    a {
+        display: block
+    }
+}

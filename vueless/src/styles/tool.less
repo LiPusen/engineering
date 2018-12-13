@@ -1,0 +1,140 @@
+.no-padding {
+    padding: 0px !important;
+}
+
+.padding-content {
+    padding: 4px 0;
+}
+
+div:focus {
+    outline: none;
+}
+
+.fr {
+    float: right;
+}
+
+.fl {
+    float: left;
+}
+
+.pr-5 {
+    padding-right: 5px;
+}
+
+.pl-5 {
+    padding-left: 5px;
+}
+
+.block {
+    display: block;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.inlineBlock {
+    display: inline-block;
+}
+
+.clearfix {
+    &:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+    }
+}
+
+code {
+    background-color: #eef1f6;
+    padding: 15px 16px;
+    margin-bottom: 20px;
+    display: block;
+    line-height: 36px;
+    font-size: 15px;
+    font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+    a {
+        color: #337ab7;
+        cursor: pointer;
+        &:hover {
+            color: rgb(32, 160, 255);
+        }
+    }
+}
+
+/*fade*/
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.28s;
+}
+
+.fade-enter,
+.fade-leave-active {
+    opacity: 0;
+}
+
+/*fade*/
+
+.breadcrumb-enter-active,
+.breadcrumb-leave-active {
+    transition: all .5s;
+}
+
+.breadcrumb-enter,
+.breadcrumb-leave-active {
+    opacity: 0;
+    transform: translateX(20px);
+}
+
+.breadcrumb-move {
+    transition: all .5s;
+}
+
+.breadcrumb-leave-active {
+    position: absolute;
+}
+
+.colorBtn(@col) {
+    background-color: @col;
+    cursor: pointer;
+    &:hover {
+        color: @col;
+        &:before,
+        &:after {
+            background-color: @col;
+        }
+    }
+}
+
+.t-blue-btn {
+    .colorBtn(#324157);
+}
+
+.t-lightBlue-btn {
+    .colorBtn(#3A71A8)
+}
+
+.t-red-btn {
+    .colorBtn(#C03639)
+}
+
+.t-pink-btn {
+    .colorBtn(#E65D6E)
+}
+
+.t-green-btn {
+    .colorBtn(#30B08F)
+}
+
+.t-tiffany-btn {
+    .colorBtn(#4AB7BD)
+}
+
+.t-yellow-btn {
+    .colorBtn(#FEC171)
+}

@@ -1,0 +1,32 @@
+// 搜索模块
+.b-search{
+    padding: 10px 15px;
+    &-item{
+        display: inline-block;
+        margin-right: 10px;
+    }
+}
+// 分页模块
+.b-page{
+    padding-top: 30px;
+    text-align: right;
+}
+// 卡片效果
+.b-card{
+    .el-card__header {
+        padding: 0px!important;
+    }
+    &-header{
+        position: relative;
+        height: 220px;
+        img {
+        width: 100%;
+        height: 100%;
+        transition: all 0.2s linear;
+        &:hover {
+            transform: scale(1.1, 1.1);
+            filter: contrast(130%);
+        }
+        }
+    }
+}
