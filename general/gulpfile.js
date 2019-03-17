@@ -116,7 +116,7 @@ gulp.task('server', () => {
 	return server.server({
 		root: "./dist",
 		livereload: true,
-		port: 3000
+		port: 3001
 	})
 })
 
